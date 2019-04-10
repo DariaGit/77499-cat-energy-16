@@ -1,0 +1,17 @@
+.product {
+  outline: 1px solid green;
+  height: 184px;//временно для сетки
+  margin-bottom: 24px;
+}
+
+.product__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: $normal;
+}
+
+.product__characteristic {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(68, 68, 68, 1);
+}
