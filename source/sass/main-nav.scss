@@ -1,0 +1,18 @@
+.main-nav {
+  /* Временно для сетки */
+  min-height: 264px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    /* Временно для сетки */
+    min-height: 112px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    /* Временно для сетки */
+    min-height: 142px;
+  }
+}
