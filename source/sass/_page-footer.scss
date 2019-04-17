@@ -1,5 +1,66 @@
 .page-footer {
   outline: 1px solid green;
+  background-color: $gray-background;
+  height: 235px; //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    height: 150px; //временно для сетки
+  }
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__footer-logo {
+    width: 132px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__footer-logo {
+    width: 285px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    width: 354px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__social {
+    width: 610px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    width: 162px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__copyright {
+    width: 245px;
+  }
 }
 
 .social__list {

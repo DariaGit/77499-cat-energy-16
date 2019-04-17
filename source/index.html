@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -12,7 +13,8 @@
 <body>
   <header class="page-header container">
     <a class="page-header__logo">
-      <img class="logo-image page-header__logo-image" src="#" width="191" height="39" alt="Логотип Cat Energy">
+      <img class="logo-image page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+        alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -32,20 +34,22 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="promo container">
-      <h1 class="promo__header">Функциональное питание для котов</h1>
-      <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="#" width="280" height="270" alt="Банка корма Cat Energy Pro Курица">
-      <a class="promo__choose-program button" href="#">Подобрать программу</a>
+    <section class="promo">
+      <div class="promo__container container">
+        <h1 class="promo__header">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <img class="promo__image" src="#" width="280" height="270" alt="Банка корма Cat Energy Pro Курица">
+        <a class="promo__choose-program button" href="#">Подобрать программу</a>
+      </div>
     </section>
-    <div class="category-wrapper">
-      <article class="category container">
+    <div class="category-wrapper container">
+      <article class="category">
         <p class="category__title category__title--losing-weight">Похудение</p>
         <p class="category__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="category__button">Каталог Slim</a>
       </article>
-      <article class="category container">
+      <article class="category">
         <p class="category__title category__title--weight-gain">Набор массы</p>
         <p class="category__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
@@ -66,8 +70,8 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer container">
-    <div class="page-footer__wrapper">
+  <footer class="page-footer">
+    <div class="page-footer__container container">
       <div class="page-footer__footer-logo">
         <a class="page-footer__logo">
           <img class="logo-image page-footer__logo-image" src="#" width="128" height="24" alt="Логотип Cat Energy">

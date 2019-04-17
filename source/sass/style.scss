@@ -1,26 +1,17 @@
 @import "variables";
+@import "mixins";
+@import "scaffolding";
 @import "advantages";
-@import "button";
 @import "catalog";
-@import "category-wrapper";
 @import "category";
+@import "category-wrapper";
 @import "copyright";
-@import "logo-image";
 @import "main-nav";
 @import "more-products";
 @import "page-footer";
 @import "page-header";
-@import "page-main";
 @import "product";
 @import "promo";
 @import "site-list";
 @import "container";
 @import "visually-hidden";
-
-body {
-  background: $color-basic;
-  font-family: $font-family;
-  color: $font-color;
-  margin: 0;
-  padding: 0;
-}
