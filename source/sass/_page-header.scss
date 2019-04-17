@@ -1,24 +1,31 @@
 .page-header {
   display: flex;
   flex-direction: column;
-}
-
-.page-header__logo {
-  height: 39px;
+  outline: 1px solid green;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
+    justify-content: space-between;
   }
+}
 
-  .page-header__logo {
+.page-header__logo-image {
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    width: 174px;
     height: 59px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
+  .page-header__logo-image {
+    width: 203px;
     height: 60px;
   }
 }

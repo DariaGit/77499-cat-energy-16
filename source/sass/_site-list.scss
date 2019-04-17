@@ -1,5 +1,15 @@
 .site-list {
-  list-style: none;
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 516px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .site-list__item {
