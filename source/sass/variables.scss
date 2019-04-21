@@ -14,10 +14,12 @@ $color-basic: rgba(255, 255, 255, 1);
 $gray-background: rgba(242, 242, 242, 1);
 
 //Зеленый цвет для кнопок и прочих элементов
-$color-green: rgba(104, 183, 56, 1);
+$button-green: rgba(104, 183, 56, 1);
+$button-green-hover: rgba(94, 170, 47, 1);
 
 //Ширины
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
+$tablet-width-only: 1339px;

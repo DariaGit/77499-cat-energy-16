@@ -1,12 +1,10 @@
 .promo {
-  height: 480px;//временно для сетки
+  box-sizing: border-box;
   margin-bottom: 22px;
-  background-color: #64a83b; //временно
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    background-color: $color-basic;
     padding-left: 90px;
   }
 }
@@ -18,27 +16,58 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .promo-wrapper {
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 305px;
+  }
+}
+
 .promo__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__container {
+    align-items: flex-start;
+  }
 }
 
 .promo__header {
   margin: 0;
+  margin-top: 26px;
   padding: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: $normal;
+  text-align: center;
   color: rgba(255, 255, 255, 1);
 }
 
 @media (min-width: $tablet-width) {
   .promo__header {
+    padding-right: 14px;
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
     color: $font-color;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .promo__header {
+    margin-top: 70px;
+  }
+}
+
 .promo__slogan {
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
@@ -47,6 +76,49 @@
 
 @media (min-width: $tablet-width) {
   .promo__slogan {
+    margin-top: 44px;
+    font-size: 20px;
+    line-height: 20px;
     color: $font-color;
+  }
+}
+
+.promo__image {
+  width: 280px;
+  height: 270px;
+  margin-top: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__image {
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__image {
+    position: absolute;
+  }
+}
+
+.promo__choose-program {
+  font-size: 14px;
+  line-height: 18px;
+  width: 232px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__choose-program {
+    width: auto;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__choose-program {
+    margin-top: 52px;
   }
 }
