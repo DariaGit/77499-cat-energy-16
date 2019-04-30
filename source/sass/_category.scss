@@ -253,15 +253,40 @@
   }
 }
 
+.category__button:hover {
+  &::before {
+    width: 34px;
+    right: -46px;
+  }
+}
+
+.category__button:active,
+.category__button:focus {
+  opacity: 0.3;
+
+  &::before {
+    width: 34px;
+    right: -46px;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .category__button {
     font-size: 20px;
     line-height: 20px;
 
     &::before {
-      content: "";
       top: 8px;
       right: -47px;
+    }
+  }
+
+  .category__button:hover,
+  .category__button:active,
+  .category__button:focus {
+    &::before {
+      right: -56px;
     }
   }
 }
