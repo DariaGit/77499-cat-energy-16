@@ -1,20 +1,3 @@
-.catalog {
-  height: 1731px; //временно для сетки
-  outline: 1px solid green;
-}
-
-@media (min-width: $tablet-width) {
-  .catalog {
-    height: 2368px; //временно для сетки
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog {
-    height: 1230px; //временно для сетки
-  }
-}
-
 .catalog__wrapper {
   display: flex;
   flex-direction: column;
@@ -29,27 +12,26 @@
 }
 
 .catalog__item {
-  height: 185px; //временно для сетки
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__item {
     width: 323px;
-    height: 433px; //временно для сетки
+
     margin-right: 60px;
 
     &:nth-child(even) {
       margin-right: 0;
     }
-    margin-bottom: 143px;
+    margin-bottom: 140px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__item {
     width: 245px;
-    height: 433px; //временно для сетки
+
     margin-right: 80px;
 
     &:nth-child(even) {
@@ -66,25 +48,24 @@
 .catalog__title {
   margin: 0;
   padding: 0;
+  margin-top: 13px;
+  margin-bottom: 28px;
   font-size: 36px;
   line-height: 60px;
   font-weight: $normal;
 }
 
-.more-products {
-  height: 185px; //временно для сетки
-}
-
 @media (min-width: $tablet-width) {
-  .more-products {
-    width: 323px;
-    height: 433px; //временно для сетки
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 37px;
+    margin-bottom: 166px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .more-products {
-    width: 245px;
-    height: 433px; //временно для сетки
+  .catalog__title {
+    margin-top: 52px;
   }
 }

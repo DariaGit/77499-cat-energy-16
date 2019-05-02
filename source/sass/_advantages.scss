@@ -1,27 +1,30 @@
 .advantages {
-  height: 400px;//временно для сетки
-  outline: 1px solid green;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    height: 729px;//временно для сетки
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages {
-    height: 400px;//временно для сетки
+    margin-top: 14px;
+    margin-bottom: 103px;
   }
 }
 
 .advantages__title {
   margin: 0;
   padding: 0;
+  margin-bottom: 32px;
   font-size: 36px;
   line-height: 60px;
   font-weight: $normal;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 185px;
+  }
 }
 
 .advantages__list {
@@ -38,22 +41,40 @@
 }
 
 .advantages__item {
+  position: relative;
   font-family: "Arial", "Helvetica", sans-serif;
   color: rgba(68, 68, 68, 1);
   font-size: 14px;
   line-height: 18px;
+  margin-left: 80px;
+  margin-bottom: 26px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $button-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -3px;
+    left: -80px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item {
-    width: 210px;
-    height: 187px; //временно для сетки
-    margin-right: 174px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 245px;
+    margin-left: 0;
+    margin-right: 138px;
+    margin-bottom: 244px;
+    z-index: 5;
 
     &:nth-child(even) {
       margin-right: 0;
     }
-    margin-bottom: 133px;
 
     &:nth-last-child(-n+2) {
       margin-bottom: 0;
@@ -66,5 +87,69 @@
     width: 245px;
     margin-right: 80px;
     margin-bottom: 0;
+
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.advantages__item span { //без этого спана не работает z-index у псевдоэлемента, рисующего цифры
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: -113px;
+      left: 0;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .advantages__item:nth-child(#{$i})::after {
+      position: absolute;
+      content: quote($i);
+      font-family: $font-family;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      top: -151px;
+      left: 115px;
+      z-index: 1;
+    }
+  }
+}
+
+.advantages__item--eco {
+  &::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+}
+
+.advantages__item--easy {
+  &::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+}
+
+.advantages__item--how {
+  &::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+}
+
+.advantages__item--time {
+  &::before {
+    background-image: url("../img/advantage-clock@1x.png");
   }
 }
