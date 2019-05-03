@@ -98,6 +98,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list__item--gray a {
+    color: $font-color;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .site-list__item--active a {
     position: relative;
@@ -148,6 +154,14 @@
       height: 2px;
 
       background-color: #ffffff;
+    }
+  }
+
+  .site-list__item--active-green a {
+    position: relative;
+
+    &::after {
+      background-color: #68b738;
     }
   }
 }
