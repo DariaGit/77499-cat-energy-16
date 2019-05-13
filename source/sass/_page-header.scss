@@ -5,15 +5,15 @@
   padding-top: 11px;
   box-sizing: border-box;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 120%;
-    height: 1px;
-    background-color: #e6e6e6;
-    bottom: -1px;
-    left: -20px;
-  }
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 120%;
+  //   height: 1px;
+  //   background-color: #e6e6e6;
+  //   bottom: -1px;
+  //   left: -20px;
+  // }
 }
 
 .page-header__wrapper {
