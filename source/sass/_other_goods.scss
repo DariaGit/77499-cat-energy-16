@@ -5,12 +5,25 @@
   margin-bottom: 35px;
 }
 
+@media (min-width: $tablet-width) {
+  .other_goods {
+    margin-top: -100px;
+    margin-bottom: 75px;
+  }
+}
+
 .other_goods__items {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__items {
+    margin-bottom: 69px;
+  }
 }
 
 .other_goods__title {
@@ -24,22 +37,77 @@
   line-height: 24px;
   font-weight: $normal;
   color: $font-color;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    right: -20px;
-    top: 40px;
-    width: 53px;
-    height: 3px;
-    background-color: #68b738;
+@media (max-width: $mobile-width-only) {
+  .other_goods__title {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: -20px;
+      top: 40px;
+      width: 53px;
+      height: 3px;
+      background-color: #68b738;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__title {
+    position: relative;
+    padding-bottom: 81px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 37px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: -30px;
+      top: 49px;
+      width: 327px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: -67px;
+      top: 49px;
+      width: 28px;
+      height: 3px;
+      background-color: #68b738;
+    }
   }
 }
 
 .other_goods__item {
   position: relative;
   margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #d9d9d9;
+    border-bottom: transparent;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+
+    &:last-child {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -79,6 +147,14 @@
   color: $font-color;
 }
 
+@media (min-width: $tablet-width) {
+  .other_goods__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    width: 345px;
+  }
+}
+
 .other_goods__price-table {
   margin: 0;
   padding: 0;
@@ -91,17 +167,48 @@
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .other_goods__price-table {
+    margin-bottom: 0;
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 285px;
+  }
+}
+
 .other_goods__quantity {
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__quantity {
+    text-align: right;
+    width: 190px;
+  }
 }
 
 .other_goods__price {
   text-align: right;
 }
 
-.other_goods__gift-block {
-  margin: 0;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .other_goods__price {
+    padding-top: 2px;
+    padding-left: -3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__button {
+    margin-top: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__gift-block {
+    margin-top: 0;
+  }
 }
 
 .other_goods__gift {
@@ -123,9 +230,32 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .other_goods__gift {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px 200px;
+    min-height: 200px;
+    height: 200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+}
+
 .other_goods__gift-image {
   width: 280px;
   height: 289px;
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__gift-image {
+    width: 708px;
+    height: 200px;
+  }
 }
 
 .other_goods__gift-icon {
@@ -133,6 +263,14 @@
   top: 64px;
   left: 50%;
   margin-left: -28px;
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__gift-icon {
+    top: 50%;
+    margin-top: -35px;
+    left: 119px;
+  }
 }
 
 .other_goods__gift-icon path{
@@ -150,4 +288,12 @@
   line-height: 20px;
   font-weight: $normal;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .other_goods__gift-text {
+    margin-top: 1px;
+    margin-right: 125px;
+    text-align: left;
+  }
 }
