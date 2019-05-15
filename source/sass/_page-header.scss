@@ -4,15 +4,18 @@
   margin: 0;
   padding-top: 11px;
   box-sizing: border-box;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 1px;
-    background-color: #e6e6e6;
-    bottom: -1px;
-    left: -20px;
+@media (max-width: $mobile-width-only) {
+  .page-header {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: #e6e6e6;
+      bottom: 4px;
+    }
   }
 }
 
