@@ -38,6 +38,98 @@
       </nav>
     </div>
   </header>
+  <main>
+    <div class="container">
+      <section class="form">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="form__items">
+          <fieldset class="form__about">
+            <legend class="form__legend visually-hidden">Информация о котэ</legend>
+            <p>
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__input-text" id="name" type="text" placeholder="Барсик">
+            </p>
+          <p>
+            <label class="form__label" for="weight">Вес (кг)*</label>
+            <input class="form__input-text" id="weight" type="text" placeholder="7">
+          </p>
+          <p>
+            <label class="form__label" for="age">Возраст (лет)</label>
+            <input class="form__input-text" id="age" type="text" placeholder="7">
+          </p>
+          </fieldset>
+          <fieldset class="form__programm">
+              <legend class="form__legend visually-hidden">Информация о котэ</legend>
+              <ul class="form__programm-items">
+                <li class="form__programm-item">
+                  <input class="form__input-radio" id="input-slim" name="programm-type" type="radio" value="slim">
+                  <label class="form__label" for="input-slim">Похудение</label>
+                </li>
+                <li class="form__programm-item">
+                    <input class="form__input-radio" id="input-fat" name="programm-type" type="radio" value="fat">
+                    <label class="form__label" for="input-fat">Набор массы</label>
+                </li>
+                <li class="form__programm-item">
+                    <input class="form__input-radio" id="input-advice" name="programm-type" type="radio" value="advice">
+                    <label class="form__label" for="input-advice">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset class="form__about-human">
+            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <p>
+              <label class="form__label" for="human-name">E-mail:*</label>
+              <input class="form__input-text" id="human-name" type="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p>
+              <label class="form__label" for="human-phone">Телефон:*</label>
+              <input class="form__input-text" id="human-phone" type="tel" placeholder="8 (960) 900-60-90">
+              </p>
+          </fieldset>
+          <fieldset class="form__text-comment">
+            <legend class="form__legend">Комментарий</legend>
+            <label class="form__label visually-hidden">Расскажите о вашем коте</label>
+            <textarea class="form__comment-area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend class="form__legend">Дополнительно</legend>
+            <ul class="form__extra">
+              <li class="form__extra-item">
+                <input class="form__input-extra" id="sweetener-id" name="sweetener" type="checkbox"  checked>
+                <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
+              </li>
+              <li class="form__extra-item">
+                  <input class="form__input-extra" id="water-id" name="water" type="checkbox">
+                  <label class="form__label" for="water-id">Питьевая вода</label>
+              </li>
+              <li class="form__extra-item">
+                  <input class="form__input-extra" id="milk-id" name="milk" type="checkbox">
+                  <label class="form__label" for="milk-id">Молоко</label>
+              </li>
+              <li class="form__extra-item">
+                  <input class="form__input-extra" id="vitamins-id" name="vitamins" type="checkbox">
+                  <label class="form__label" for="vitamins-id">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+          <p>* — Обязательные поля</p>
+        </form>
+      </section>
+    </div>
+    <section class="map">
+      <div class="container">
+        <div class="map__for-dealers">
+          <p class="map__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
+      </div>
+      <div class="map__yandex-map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCbhQ804"></iframe>
+      </div>
+    </section>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__container container">
       <div class="page-footer__footer-logo">
