@@ -1,4 +1,5 @@
 .map {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 29px;
@@ -13,6 +14,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .map {
+    padding-top: 0;
+  }
+}
+
 .map__for-dealers {
   display: flex;
   padding-bottom: 20px;
@@ -21,6 +28,19 @@
 @media (min-width: $tablet-width) {
   .map__for-dealers {
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__for-dealers {
+    position: absolute;
+    padding-top: 64px;
+    padding-bottom: 54px;
+    width: 570px;
+    background-color: #ffffff;
+    top: 95px;
+    z-index: 10;
+    box-sizing: border-box;
   }
 }
 
@@ -45,6 +65,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .map__invite {
+    margin-left: 76px;
+  }
+}
+
 .map__address {
   margin: 0;
   padding: 0;
@@ -66,7 +92,14 @@
     margin-top: -2px;
   }
 
-  .map__address span {
+  @media (min-width: $desktop-width) {
+    .map__address {
+      margin-right: 87px;
+      text-align: left;
+    }
+  }
+
+.map__address span {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -84,5 +117,13 @@
   .map__yandex-map iframe {
     height: 397px;
     margin-top: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__yandex-map iframe {
+    height: 400px;
+    margin: 0;
+    padding: 0;
   }
 }
