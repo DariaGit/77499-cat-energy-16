@@ -1,0 +1,245 @@
+.form {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: $normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-color;
+  margin-bottom: 32px;
+}
+
+.form-p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.form__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: $normal;
+  text-transform: none;
+}
+
+.form__legend {
+  font-family: inherit;
+  font-weight: $normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: -3px;
+  text-transform: none;
+}
+
+.form__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: $normal;
+  text-transform: uppercase;
+  width: 230px;
+}
+
+.form-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__input-text {
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  height: 45px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-right: 16px;
+  color: $font-color;
+  opacity: 1;
+}
+
+.form__label {
+  margin-right: 10px;
+}
+
+.form__input-text--cate-name {
+  min-width: 228px;
+  width: 228px;
+}
+
+.form__input-text--cate-weight {
+  width: 206px;
+}
+
+
+.form__input-text--age {
+  width: 172px;
+}
+
+.form__input-text[placeholder] {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: $normal;
+  text-transform: uppercase;
+  color: $font-color;
+  opacity: 1;
+}
+
+.form__programm {
+  margin-top: 30px;
+}
+
+.form__programm-item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  margin-left: 46px;
+}
+
+.form__programm-label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: -47px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form__input-radio:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: -37px;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.form__about-human {
+  margin-top: 40px;
+}
+
+.form__about-human-legend {
+  margin-bottom: 34px;
+}
+
+.form__about-human-email {
+  width: 218px;
+  margin-left: -3px;
+}
+
+.form__about-human-phone {
+  width: 202px;
+  margin-left: -3px;
+  padding-left: 14px;
+}
+
+.form__text-comment {
+  margin-top: 13px;
+}
+
+.form__comment-area {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  padding-left: 14px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  width: 280px;
+  min-height: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+}
+
+.form__legend--extra {
+  margin-top: 28px;
+  margin-bottom: 34px;
+}
+
+.form__extra-item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+
+.form__label--extra {
+  position: relative;
+  margin-left: 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -45px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cecece;
+  }
+}
+
+.form__input-extra:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -40px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+}
+
+.form__button {
+  margin-top: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.form__note {
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $font-color;
+  text-transform: none;
+  text-align: center;
+  margin-left: 5px;
+}
