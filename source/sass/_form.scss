@@ -50,6 +50,7 @@
 }
 
 .form-fieldset {
+  position: relative;
   border: none;
   margin: 0;
   padding: 0;
@@ -117,6 +118,26 @@
 
 .form__programm {
   margin-top: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+    top: -21px;
+    left: -20px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+    bottom: -11px;
+    left: -20px;
+  }
 }
 
 .form__programm-item {
@@ -172,7 +193,18 @@
 }
 
 .form__about-human-legend {
+  position: relative;
   margin-bottom: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
+    top: 13px;
+    right: -20px;
+  }
 }
 
 .form__about-human-email {
@@ -220,6 +252,20 @@
   margin-top: 13px;
 }
 
+.form__comment-legend {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 159px;
+    height: 3px;
+    background-color: #68b738;
+    top: 14px;
+    left: 116%;
+  }
+}
+
 .form__comment-area {
   margin: 0;
   padding: 0;
@@ -249,8 +295,19 @@
 }
 
 .form__legend--extra {
+  position: relative;
   margin-top: 28px;
   margin-bottom: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 135px;
+    height: 3px;
+    background-color: #68b738;
+    top: 14px;
+    left: 116%;
+  }
 }
 
 .form__extra-item {
@@ -296,12 +353,7 @@
 
 .form__label--extra:active,
 .form__label--extra:focus {
-  &::before {
-    opacity: 0.3;
-  }
-  &::after {
-    opacity: 0.3;
-  }
+  opacity: 0.3;
 }
 
 .form__button {
