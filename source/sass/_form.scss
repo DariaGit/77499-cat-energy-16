@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
+  position: relative;
 }
 
 .form__title {
@@ -62,6 +63,7 @@
 }
 
 .form__input-text {
+  position: relative;
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
   height: 45px;
@@ -71,6 +73,18 @@
   padding-right: 16px;
   color: $font-color;
   opacity: 1;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus, &:active {
+    border: 1px solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
 }
 
 .form__label {
@@ -142,6 +156,17 @@
   border-radius: 50%;
 }
 
+.form__programm-label:hover {
+  &::before {
+    border: 1px solid #bfbfbf;
+  }
+}
+
+.form__programm-label:active,
+.form__programm-label:focus {
+  opacity: 0.3;
+}
+
 .form__about-human {
   margin-top: 40px;
 }
@@ -151,14 +176,44 @@
 }
 
 .form__about-human-email {
+  position: relative;
   width: 218px;
   margin-left: -3px;
+  padding-right: 40px;
 }
 
 .form__about-human-phone {
   width: 202px;
   margin-left: -3px;
   padding-left: 14px;
+  padding-right: 40px;
+}
+
+.form__input-icon {
+  position: absolute;
+}
+
+.form__input-icon--mail {
+  top: 15px;
+  right: 17px;
+  width: 18px;
+  height: 13px;
+}
+
+.form__input-icon--phone {
+  top: 12px;
+  right: 13px;
+  width: 21px;
+  height: 21px;
+}
+
+.form__input-text:active+.form__input-icon path,
+.form__input-text:focus+.form__input-icon path {
+   fill: #68b738;
+}
+
+.form__input-text:invalid+.form__input-icon path {
+   fill: #ff8282;
 }
 
 .form__text-comment {
@@ -183,6 +238,14 @@
   height: 150px;
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus, &:active {
+    border: 1px solid #444444;
+  }
 }
 
 .form__legend--extra {
@@ -199,6 +262,10 @@
 .form__label--extra {
   position: relative;
   margin-left: 45px;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &::before {
     position: absolute;
@@ -219,6 +286,22 @@
   width: 21px;
   height: 16px;
   background-image: url("../img/icon-tick.svg");
+}
+
+.form__label--extra:hover {
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
+.form__label--extra:active,
+.form__label--extra:focus {
+  &::before {
+    opacity: 0.3;
+  }
+  &::after {
+    opacity: 0.3;
+  }
 }
 
 .form__button {
