@@ -20,7 +20,7 @@
       background-size: auto 305px;
       background-repeat: no-repeat;
       background-position: center top;
-      z-index: 1;
+      z-index: -1;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-mobile@2x.jpg");
