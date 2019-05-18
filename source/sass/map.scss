@@ -34,11 +34,13 @@
 @media (min-width: $desktop-width) {
   .map__for-dealers {
     position: absolute;
-    padding-top: 64px;
+    padding-top: 66px;
     padding-bottom: 54px;
     width: 570px;
+    height: 200px;
+    min-height: 200px;
     background-color: #ffffff;
-    top: 95px;
+    top: 106px;
     z-index: 10;
     box-sizing: border-box;
   }
