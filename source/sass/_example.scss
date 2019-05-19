@@ -25,11 +25,44 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 22px;
+    padding-bottom: 70px;
+    background-color: #ffffff;
+
+    &::before {
+      width: 0;
+      height: 0;
+      background-color: transparent;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 158px;
+      width: 1300px;
+      margin-left: -115px;
+      height: 463px;
+      background-color: $gray-background;
+      z-index: 1;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .example__slim {
     margin-left: -50%;
     overflow: hidden;
     z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__all-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -46,6 +79,17 @@
     margin-bottom: 249px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example__wrapper-1 {
+    margin-bottom: 0;
+    background-color: transparent;
+    width: 445px;
+    max-width: 445px;
+    z-index: 10;
+  }
+}
+
 
 .example__wrapper-2 {
   position: relative;
@@ -64,6 +108,16 @@
     background-color: #eaeaea;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example__wrapper-2 {
+    width: 680px;
+    max-width: 680px;
+    background-color: transparent;
+    z-index: 10;
+  }
+}
+
 
 .example__title {
   margin: 0;
@@ -101,6 +155,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example__description {
+    margin-top: 146px;
+    width: 435px;
+  }
+}
+
 .example__result-wrapper {
   margin: 0;
   padding: 0;
@@ -114,6 +175,13 @@
 @media (min-width: $tablet-width) {
   .example__result-wrapper {
     margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__result-wrapper {
+    margin-top: 70px;
+    width: 410px;
   }
 }
 
@@ -207,6 +275,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example__bottom {
+    background-color: $gray-background;
+  }
+}
+
 .example__cost {
   margin: 0;
   margin-top: 19px;
@@ -233,6 +307,23 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example__cost {
+    margin-top: 50px;
+    width: 329px;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .example__cost span {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 60px;
+  }
+}
+
 .example__before-after {
   margin-top: 34px;
 }
@@ -249,6 +340,14 @@
       height: 462px;
       background-color: #eaeaea;
       z-index: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__before-after {
+    &::before {
+      background-color: transparent;
     }
   }
 }
@@ -278,6 +377,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example__before {
+    width: 345px;
+    top: -88px;
+    left: 51px;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .example__after {
     display: none;
@@ -294,9 +401,23 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example__after {
+    top: -88px;
+    left: 396px;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .example__after .example__image {
     transform: translateX(-46%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__after .example__image {
+    transform: translateX(-345px);
   }
 }
 
@@ -312,6 +433,13 @@
 @media (min-width: $tablet-width) {
   .example__controls-wrapper {
     padding-top: 367px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__controls-wrapper {
+    padding-top: 470px;
+    justify-content: flex-end;
   }
 }
 
@@ -339,6 +467,16 @@
     min-width: 49px;
     font-size: 20px;
     border-bottom: 1px dotted #bebebe;
+
+    &:hover {
+      border-bottom: 1px solid #bebebe;
+    }
+
+    &:active,
+    &:focus {
+      border-bottom: none;
+      padding-bottom: 7px;
+    }
   }
 }
 
@@ -402,5 +540,25 @@
       height: 8px;
       background-color: #68b738;
     }
+  }
+
+  .example__rectangle:hover {
+    &::before {
+      box-shadow: 0 2px 5px rgba(80, 80, 80, 0.25);
+    }
+  }
+
+  .example__rectangle:active,
+  .example__rectangle:focus {
+    &::before {
+      border: 2px solid #68b738;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__rectangle {
+    background-color: #dcdcdc;
+    width: 426px;
   }
 }

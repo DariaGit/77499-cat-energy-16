@@ -44,7 +44,7 @@
     height: 200px;
     min-height: 200px;
     background-color: #ffffff;
-    top: 106px;
+    top: 93px;
     z-index: 10;
     box-sizing: border-box;
   }
@@ -121,6 +121,12 @@
   .map__yandex-map {
     background-color: transparent;
     height: 434px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__yandex-map {
+    height: 400px;
   }
 }
 
