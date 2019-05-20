@@ -17,7 +17,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 83px;
+  }
+}
+
 .form-p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
@@ -158,13 +167,22 @@
 @media (min-width: $tablet-width) {
   .form__label {
     margin-left: 1px;
-    margin-right: 12px;
+    margin-right: 16px;
+  }
+}
+
+.form__label--cat-name {
+  margin-right: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label--cat-name {
+    margin-right: 16px;
   }
 }
 
 .form__input-text--cate-name {
-  min-width: 228px;
-  width: 228px;
+  width: 229px;
 }
 
 @media (min-width: $tablet-width) {
@@ -180,12 +198,12 @@
 }
 
 .form__input-text--cate-weight {
-  width: 206px;
+  width: 204px;
 }
 
 @media (min-width: $tablet-width) {
   .form__input-text--cate-weight {
-    width: 539px;
+    width: 536px;
   }
 }
 
@@ -195,6 +213,15 @@
   }
 }
 
+.form__label--weight {
+  margin-right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label--weight {
+    margin-right: 20px;
+  }
+}
 
 .form__input-text--age {
   width: 172px;
@@ -209,6 +236,16 @@
 @media (min-width: $desktop-width) {
   .form__input-text--age {
     width: 436px;
+  }
+}
+
+.form__label--age {
+  margin-right: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label--age {
+    margin-right: 17px;
   }
 }
 
@@ -357,6 +394,13 @@
   opacity: 0.3;
 }
 
+@media (min-width: $tablet-width) {
+  .form__about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form__about {
     margin-right: 10px;
@@ -448,6 +492,16 @@
   }
 }
 
+.form__label--email {
+  margin-right: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label--email {
+    margin-right: 21px;
+  }
+}
+
 .form__about-human-email {
   position: relative;
   width: 218px;
@@ -468,19 +522,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__about-human .form__label {
-    margin-right: 16px;
-  }
-}
-
-@media (min-width: $tablet-width) {
   .form__about-human .form__input-text {
     padding-left: 21px;
   }
 }
 
 .form__about-human-phone {
-  width: 202px;
+  width: 204px;
   margin-left: -3px;
   padding-left: 14px;
   padding-right: 40px;
@@ -488,7 +536,7 @@
 
 @media (min-width: $tablet-width) {
   .form__about-human-phone {
-    width: 533px;
+    width: 534px;
   }
 }
 
@@ -498,10 +546,14 @@
   }
 }
 
+.form__label-phone {
+  margin-right: 12px;
+}
+
 @media (min-width: $tablet-width) {
   .form__label-phone {
     margin-left: -2px;
-    margin-right: 12px;
+    margin-right: 20px;
   }
 }
 
