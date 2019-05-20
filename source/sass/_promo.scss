@@ -1,11 +1,12 @@
 .promo {
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 22px;
+  margin-top: -5px;
 }
 
 @media (max-width: $mobile-width-only) {
   .promo {
+    margin-bottom: 22px;
     position: relative;
 
     &::after {
@@ -20,7 +21,7 @@
       background-size: auto 305px;
       background-repeat: no-repeat;
       background-position: center top;
-      z-index: 1;
+      z-index: -1;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-mobile@2x.jpg");
@@ -73,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__header {
-    margin-top: 37px;
+    margin-top: 39px;
     padding-right: 14px;
     width: 420px;
     font-size: 60px;
@@ -85,14 +86,14 @@
 
 @media (min-width: $desktop-width) {
   .promo__header {
-    margin-top: 86px;
+    margin-top: 88px;
   }
 }
 
 .promo__slogan {
   margin: 0;
   padding: 0;
-  margin-top: 24px;
+  margin-top: 26px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
@@ -101,7 +102,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__slogan {
-    margin-top: 42px;
+    margin-top: 43px;
     padding-left: 1px;
     font-size: 20px;
     line-height: 20px;
@@ -136,7 +137,7 @@
     width: 709px;
     height: 609px;
     left: 29px;
-    top: 210px;
+    top: 212px;
     z-index: 1;
   }
 }
@@ -146,7 +147,7 @@
     width: 552px;
     height: 499px;
     left: 490px;
-    top: -22px;
+    top: -20px;
   }
 }
 
@@ -155,14 +156,14 @@
   line-height: 18px;
   width: 232px;
   margin: 0 auto;
-  margin-top: 4px;
+  margin-top: -1px;
 }
 
 @media (min-width: $tablet-width) {
   .promo__choose-program {
     width: auto;
     margin: 0;
-    margin-top: 48px;
+    margin-top: 47px;
     margin-left: 2px;
     font-size: 20px;
     line-height: 20px;
