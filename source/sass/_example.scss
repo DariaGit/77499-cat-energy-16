@@ -358,9 +358,9 @@
 @media (min-width: $desktop-width) {
   .example__before-after {
     &::before {
-      width: 46%;
+      width: 48%;
       top: 102px;
-      right: -40px;
+      left: 395px;
       height: 462px;
     }
   }
@@ -419,7 +419,7 @@
 @media (min-width: $desktop-width) {
   .example__after {
     top: -88px;
-    left: 396px;
+    left: 395px;
   }
 }
 
