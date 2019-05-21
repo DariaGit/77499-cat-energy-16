@@ -135,10 +135,12 @@
   .promo__image {
     position: absolute;
     width: 709px;
+    max-width: 100%;
     height: 609px;
     left: 29px;
     top: 212px;
     z-index: 1;
+    transform: none;
   }
 }
 
