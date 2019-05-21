@@ -46,7 +46,9 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require("node-normalize-scss").includePath
+    }))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -54,6 +56,15 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+});
+
+gulp.task("copy_normalize", function () {
+  return gulp.src([
+    "source/css/normalize.css"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("images", function () {
@@ -84,6 +95,7 @@ gulp.task("sprite", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "copy_normalize",
   "css",
   "sprite",
   "html"
