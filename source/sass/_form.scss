@@ -728,6 +728,10 @@
   }
 }
 
+.form__extra-fieldset {
+  margin-top: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .form__extra {
     display: flex;
@@ -743,7 +747,7 @@
 
 .form__legend--extra {
   position: relative;
-  margin-top: 28px;
+  margin-top: 3px;
   margin-bottom: 34px;
 }
 
