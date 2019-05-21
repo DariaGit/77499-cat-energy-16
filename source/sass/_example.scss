@@ -144,6 +144,7 @@
   line-height: 18px;
   font-weight: $normal;
   color: $font-color;
+  width: 270px;
 }
 
 @media (min-width: $tablet-width) {
@@ -256,7 +257,9 @@
   line-height: 12px;
   font-weight: $normal;
   color: #444444;
-  width: 85px;
+  width: 80px;
+  height: 24px;
+  min-height: 24px;
   background-color: $gray-background;
   text-align: center;
   z-index: 10;
@@ -422,7 +425,7 @@
 }
 
 .example__controls-wrapper {
-  margin-top: 27px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
