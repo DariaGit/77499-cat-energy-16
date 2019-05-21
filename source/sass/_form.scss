@@ -620,6 +620,19 @@
   margin-top: 13px;
 }
 
+@media (min-width: $tablet-width) {
+  .form__text-comment {
+    margin-top: 45px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form__text-comment {
+    margin-top: 47px;
+  }
+}
+
 .form__comment-legend {
   position: relative;
 }
@@ -640,8 +653,6 @@
 
 @media (min-width: $tablet-width) {
   .form__comment-legend {
-    margin-top: 32px;
-
     &::before {
       position: absolute;
       content: "";
@@ -666,7 +677,7 @@
 
 @media (min-width: $desktop-width) {
   .form__comment-legend {
-    margin-top: 34px;
+    margin-top: 0;
 
     &::before {
       width: 0;
@@ -728,6 +739,22 @@
   }
 }
 
+.form__extra-fieldset {
+  margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__extra-fieldset {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__extra-fieldset {
+    margin-top: 66px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__extra {
     display: flex;
@@ -743,7 +770,7 @@
 
 .form__legend--extra {
   position: relative;
-  margin-top: 28px;
+  margin-top: 3px;
   margin-bottom: 34px;
 }
 
@@ -763,7 +790,7 @@
 
 @media (min-width: $tablet-width) {
   .form__legend--extra {
-    margin-top: 64px;
+    margin-top: 0;
     margin-bottom: 57px;
 
     &::before {
@@ -790,7 +817,7 @@
 
 @media (min-width: $desktop-width) {
   .form__legend--extra {
-    margin-top: 66px;
+    margin-top: 0;
 
     &::before {
       width: 0;

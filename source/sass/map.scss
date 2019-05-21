@@ -10,12 +10,30 @@
 
 @media (min-width: $tablet-width) {
   .map {
+    padding-top: 56px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__form {
     padding-top: 65px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map--catalog {
+    padding-top: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map--catalog {
     padding-top: 0;
   }
 }
@@ -26,7 +44,7 @@
 
 .map__for-dealers {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -138,8 +156,8 @@
 
 @media (min-width: $tablet-width) {
   .map__yandex-map iframe {
-    height: 397px;
-    margin-top: 37px;
+    height: 399px;
+    margin-top: 35px;
   }
 }
 
