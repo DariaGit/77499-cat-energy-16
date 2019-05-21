@@ -26,6 +26,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .map--catalog {
+    padding-top: 0;
+  }
+}
+
 .map--index {
   background-color: #ffffff;
 }
