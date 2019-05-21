@@ -22,6 +22,17 @@
       height: 1px;
       background-color: #e6e6e6;
     }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 619px;
+      left: 0;
+      width: 100%;
+      height: 462px;
+      background-color: #f2f2f2;
+      z-index: 1;
+    }
   }
 }
 
@@ -97,11 +108,13 @@
   padding: 0;
   width: 100%;
   background-color: #f2f2f2;
+  z-index: 20;
 }
 
 @media (min-width: $tablet-width) {
   .example__wrapper-2 {
     height: 462px;
+    background-color: transparent;
   }
 
   .example__slim .example__wrapper-2 {
@@ -153,6 +166,7 @@
     padding-right: 10px;
     font-size: 16px;
     line-height: 24px;
+    width: 698px;
   }
 }
 
@@ -175,7 +189,7 @@
 
 @media (min-width: $tablet-width) {
   .example__result-wrapper {
-    margin-top: 55px;
+    margin-top: 53px;
   }
 }
 
@@ -338,8 +352,9 @@
     &::before {
       position: absolute;
       content: "";
+      top: -9px;
       right: -30px;
-      width: 383px;
+      width: 54%;
       height: 462px;
       background-color: #eaeaea;
       z-index: 1;
@@ -374,7 +389,7 @@
   .example__before {
     position: absolute;
     width: 317px;
-    top: -169px;
+    top: -176px;
     left: 37px;
     overflow: hidden;
   }
@@ -398,9 +413,10 @@
   .example__after {
     position: absolute;
     width: 317px;
-    top: -169px;
+    top: -176px;
     left: 354px;
     overflow: hidden;
+    z-index: 20;
   }
 }
 
@@ -435,7 +451,7 @@
 
 @media (min-width: $tablet-width) {
   .example__controls-wrapper {
-    padding-top: 367px;
+    padding-top: 359px;
   }
 }
 
@@ -513,7 +529,7 @@
 
 @media (min-width: $tablet-width) {
   .example__rectangle {
-    margin-top: -2px;
+    margin-top: -5px;
     margin-left: 23px;
     margin-right: 23px;
     width: 426px;
