@@ -49,14 +49,7 @@
     }
 
     &::after {
-      position: absolute;
-      content: "";
       top: 158px;
-      width: 1300px;
-      margin-left: -115px;
-      height: 463px;
-      background-color: $gray-background;
-      z-index: 1;
     }
   }
 }
@@ -326,7 +319,7 @@
 
 @media (min-width: $desktop-width) {
   .example__cost {
-    margin-top: 50px;
+    margin-top: 39px;
     width: 329px;
     margin-left: 0;
     margin-right: auto;
@@ -365,7 +358,10 @@
 @media (min-width: $desktop-width) {
   .example__before-after {
     &::before {
-      background-color: transparent;
+      width: 46%;
+      top: 102px;
+      right: -40px;
+      height: 462px;
     }
   }
 }

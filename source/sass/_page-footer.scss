@@ -47,7 +47,7 @@
 @media (min-width: $desktop-width) {
   .page-footer__footer-logo {
     width: 245px;
-    margin-right: 80px;
+    margin-right: 0;
   }
 }
 
@@ -242,6 +242,13 @@
       height: 0;
       background-color: transparent;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__social {
+    width: 570px;
+    margin-right: 80px;
   }
 }
 
