@@ -20,6 +20,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .map--catalog {
+    padding-top: 66px;
+  }
+}
+
 .map--index {
   background-color: #ffffff;
 }
