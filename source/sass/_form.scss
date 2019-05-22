@@ -356,7 +356,20 @@
       border: 1px solid #bfbfbf;
     }
   }
+
+  &:active,
+  &:focus {
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
+
+.form__input-radio:focus+.form__programm-label {
+  opacity: 0.3;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .form__programm-label {
@@ -925,6 +938,11 @@
 .form__label--extra:focus {
   opacity: 0.3;
 }
+
+.form__input-extra:focus+.form__label--extra {
+  opacity: 0.3;
+}
+
 
 .form__button-wrapper {
   margin: 0;
