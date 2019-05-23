@@ -50,6 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__container {
+    position: relative;
     align-items: flex-start;
     margin-left: 87px;
   }
@@ -137,10 +138,9 @@
   .promo__image {
     position: absolute;
     width: 709px;
-    max-width: 100%;
+    max-width: 709px;
     height: 609px;
-    //left: 29px;
-    left: 4%;
+    left: -88px;
     top: 212px;
     z-index: 1;
     transform: none;
@@ -150,9 +150,9 @@
 @media (min-width: $desktop-width) {
   .promo__image {
     width: 552px;
+    max-width: 552px;
     height: 499px;
-    //left: 490px;
-    left: 37.6%;
+    left: 370px;
     top: -20px;
   }
 }

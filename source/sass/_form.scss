@@ -209,7 +209,7 @@
 
 @media (min-width: $desktop-width) {
   .form__input-text--cate-weight {
-    width: 478px;
+    width: 475px;
   }
 }
 
@@ -359,17 +359,13 @@
 
   &:active,
   &:focus {
-    &::before {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 }
 
-.form__input-radio:focus+.form__programm-label {
+.form__input-radio:focus + .form__programm-label {
   opacity: 0.3;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .form__programm-label {
@@ -400,11 +396,6 @@
     width: 18px;
     height: 18px;
   }
-}
-
-.form__programm-label:active,
-.form__programm-label:focus {
-  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -939,7 +930,7 @@
   opacity: 0.3;
 }
 
-.form__input-extra:focus+.form__label--extra {
+.form__input-extra:focus + .form__label--extra {
   opacity: 0.3;
 }
 
